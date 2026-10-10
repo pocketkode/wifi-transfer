@@ -1,0 +1,93 @@
+{
+ "texts": {
+  "✓ Updated to version {v}. Your settings were kept.": "✓ 已更新到 {v} 版。你的设置都已保留。",
+  "Language: {name}": "语言：{name}",
+  "Update available: version {v}. Update it from the transfer page.": "有可用更新：{v} 版。请在传输页面更新。",
+  "Or open in a browser:": "或在浏览器中打开：",
+  "Waiting for your phone or PC…": "等待你的手机或电脑…",
+  "Version {bad} didn't start, so Wi-Fi Transfer went back to {v}.": "{bad} 版无法启动，因此 Wi-Fi Transfer 已恢复到 {v} 版。",
+  "Starting…": "正在启动…",
+  "Wi-Fi is off": "Wi-Fi 已关闭",
+  "Turn on Wi-Fi in muOS (Configuration → Network). Transfer starts automatically once connected.": "请在 muOS 中打开 Wi-Fi（Configuration → Network）。连接后会自动开始传输。",
+  "Transfer stopped": "传输已停止",
+  "Couldn't start": "无法启动",
+  "Connected · 1 device": "已连接 · 1 台设备",
+  "Connected · {n} devices": "已连接 · {n} 台设备",
+  "Full SD card backup: don't turn off the game console": "正在完整备份 SD 卡：请勿关闭掌机",
+  "{done} of {total}": "{done} / {total}",
+  "{pct}% of {total}": "{total} 的 {pct}%",
+  "Anyone on this Wi-Fi with the PIN can manage your files.": "在此 Wi-Fi 上知道 PIN 的任何人都能管理你的文件。",
+  "The transfer page is closed.": "传输页面已关闭。",
+  "Quit": "退出",
+  "Language": "语言",
+  "Start again": "重新开始",
+  "Stopped after {n} minutes without activity.": "{n} 分钟无活动，已停止。",
+  "Press again to stop the transfer": "再按一次以停止传输",
+  "Stop": "停止",
+  "New PIN": "新 PIN",
+  "Update: download started from the page": "更新：已从页面开始下载",
+  "Backup cancelled from the page": "已从页面取消备份",
+  "Couldn't make the SD card writable again. Restart the game console.": "无法让 SD 卡恢复可写。请重启掌机。",
+  "ARCHIVE (install with Archive Manager)": "ARCHIVE（用 Archive Manager 安装）",
+  "Hide": "隐藏",
+  "Auto": "自动",
+  "Free": "免费",
+  "Back": "返回",
+  "Try again": "重试",
+  "Scan with your phone": "用手机扫描",
+  "Cancel": "取消",
+  "Update": "更新",
+  "No internet connection. Turn on Wi-Fi in Configuration > Network.": "没有网络连接。请在 Configuration > Network 中打开 Wi-Fi。",
+  "Not enough free space on SD card 1 for the update.": "SD 卡 1 的剩余空间不足，无法更新。",
+  "The download couldn't be verified (damaged or not from PocketKode). Nothing was changed.": "无法校验下载内容（已损坏或并非来自 PocketKode）。未做任何更改。",
+  "The update package is empty.": "更新包是空的。",
+  "The update couldn't be read. Nothing was changed.": "无法读取更新。未做任何更改。",
+  "✓ Back from the background: same PIN, and signed-in browsers stay signed in.": "✓ 已从后台返回：PIN 不变，已登录的浏览器保持登录。",
+  "Wait until the transfer finishes, then try again.": "请等传输完成后再试。",
+  "Running in the background": "正在后台运行",
+  "The transfer page keeps working with the same address and PIN. Open Wi-Fi Transfer again to stop it.": "传输页面会以相同的地址和 PIN 继续工作。再次打开 Wi-Fi Transfer 即可停止。",
+  "Background": "后台"
+ },
+ "patterns": [
+  [
+   "New folder (.+)",
+   "新建文件夹 \\1"
+  ],
+  [
+   "Renamed (.+) → (.*)",
+   "已重命名 \\1 → \\2"
+  ],
+  [
+   "Deleted (.+)",
+   "已删除 \\1"
+  ],
+  [
+   "Connected: (.+)",
+   "已连接：\\1"
+  ],
+  [
+   "↑ Sent (.+)\\.zip \\((\\d+) files, (.+)\\)",
+   "↑ 已发送 \\1.zip（\\2 个文件，\\3）"
+  ],
+  [
+   "↑ Sent (.+) \\((.+)\\)",
+   "↑ 已发送 \\1（\\2）"
+  ],
+  [
+   "Backup started \\((.+) card\\)",
+   "已开始备份（\\1 的卡）"
+  ],
+  [
+   "Backup stopped: (.*)",
+   "备份已停止：\\1"
+  ],
+  [
+   "✓ Backup sent: (.+) \\((.+)\\)",
+   "✓ 备份已发送：\\1（\\2）"
+  ],
+  [
+   "↓ (.+) \\((.+)\\) → (.+)",
+   "↓ \\1（\\2）→ \\3"
+  ]
+ ]
+}

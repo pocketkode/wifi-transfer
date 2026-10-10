@@ -1,0 +1,93 @@
+{
+ "texts": {
+  "✓ Updated to version {v}. Your settings were kept.": "✓ 버전 {v}(으)로 업데이트했습니다. 설정은 그대로입니다.",
+  "Language: {name}": "언어: {name}",
+  "Update available: version {v}. Update it from the transfer page.": "업데이트 있음: 버전 {v}. 전송 페이지에서 업데이트하세요.",
+  "Or open in a browser:": "또는 브라우저에서 열기:",
+  "Waiting for your phone or PC…": "휴대폰이나 PC를 기다리는 중…",
+  "Version {bad} didn't start, so Wi-Fi Transfer went back to {v}.": "버전 {bad}이(가) 시작되지 않아 Wi-Fi Transfer가 {v}(으)로 돌아갔습니다.",
+  "Starting…": "시작하는 중…",
+  "Wi-Fi is off": "Wi-Fi가 꺼져 있습니다",
+  "Turn on Wi-Fi in muOS (Configuration → Network). Transfer starts automatically once connected.": "muOS에서 Wi-Fi를 켜세요(Configuration → Network). 연결되면 전송이 자동으로 시작됩니다.",
+  "Transfer stopped": "전송이 멈췄습니다",
+  "Couldn't start": "시작하지 못했습니다",
+  "Connected · 1 device": "연결됨 · 기기 1대",
+  "Connected · {n} devices": "연결됨 · 기기 {n}대",
+  "Full SD card backup: don't turn off the game console": "SD 카드 전체 백업 중: 기기를 끄지 마세요",
+  "{done} of {total}": "{total} 중 {done}",
+  "{pct}% of {total}": "{total} 중 {pct}%",
+  "Anyone on this Wi-Fi with the PIN can manage your files.": "이 Wi-Fi에서 PIN을 아는 사람은 누구나 파일을 관리할 수 있습니다.",
+  "The transfer page is closed.": "전송 페이지가 닫혀 있습니다.",
+  "Quit": "종료",
+  "Language": "언어",
+  "Start again": "다시 시작",
+  "Stopped after {n} minutes without activity.": "{n}분 동안 활동이 없어 멈췄습니다.",
+  "Press again to stop the transfer": "한 번 더 누르면 전송을 멈춥니다",
+  "Stop": "정지",
+  "New PIN": "새 PIN",
+  "Update: download started from the page": "업데이트: 페이지에서 다운로드 시작",
+  "Backup cancelled from the page": "페이지에서 백업을 취소했습니다",
+  "Couldn't make the SD card writable again. Restart the game console.": "SD 카드를 다시 쓸 수 있게 만들지 못했습니다. 기기를 다시 시작하세요.",
+  "ARCHIVE (install with Archive Manager)": "ARCHIVE(Archive Manager로 설치)",
+  "Hide": "숨기기",
+  "Auto": "자동",
+  "Free": "무료",
+  "Back": "뒤로",
+  "Try again": "다시 시도",
+  "Scan with your phone": "휴대폰으로 스캔하세요",
+  "Cancel": "취소",
+  "Update": "업데이트",
+  "No internet connection. Turn on Wi-Fi in Configuration > Network.": "인터넷에 연결되지 않았습니다. Configuration > Network에서 Wi-Fi를 켜세요.",
+  "Not enough free space on SD card 1 for the update.": "업데이트할 공간이 SD 카드 1에 부족합니다.",
+  "The download couldn't be verified (damaged or not from PocketKode). Nothing was changed.": "다운로드를 확인하지 못했습니다(손상되었거나 PocketKode의 것이 아님). 아무것도 바뀌지 않았습니다.",
+  "The update package is empty.": "업데이트 패키지가 비어 있습니다.",
+  "The update couldn't be read. Nothing was changed.": "업데이트를 읽지 못했습니다. 아무것도 바뀌지 않았습니다.",
+  "✓ Back from the background: same PIN, and signed-in browsers stay signed in.": "✓ 백그라운드에서 돌아왔습니다: PIN은 그대로이고, 로그인한 브라우저도 계속 로그인되어 있습니다.",
+  "Wait until the transfer finishes, then try again.": "전송이 끝난 뒤 다시 시도하세요.",
+  "Running in the background": "백그라운드에서 실행 중",
+  "The transfer page keeps working with the same address and PIN. Open Wi-Fi Transfer again to stop it.": "전송 페이지는 같은 주소와 PIN으로 계속 작동합니다. 멈추려면 Wi-Fi Transfer를 다시 여세요.",
+  "Background": "백그라운드"
+ },
+ "patterns": [
+  [
+   "New folder (.+)",
+   "새 폴더 \\1"
+  ],
+  [
+   "Renamed (.+) → (.*)",
+   "이름 변경 \\1 → \\2"
+  ],
+  [
+   "Deleted (.+)",
+   "삭제 \\1"
+  ],
+  [
+   "Connected: (.+)",
+   "연결됨: \\1"
+  ],
+  [
+   "↑ Sent (.+)\\.zip \\((\\d+) files, (.+)\\)",
+   "↑ 보냄 \\1.zip(파일 \\2개, \\3)"
+  ],
+  [
+   "↑ Sent (.+) \\((.+)\\)",
+   "↑ 보냄 \\1(\\2)"
+  ],
+  [
+   "Backup started \\((.+) card\\)",
+   "백업 시작(\\1 카드)"
+  ],
+  [
+   "Backup stopped: (.*)",
+   "백업 멈춤: \\1"
+  ],
+  [
+   "✓ Backup sent: (.+) \\((.+)\\)",
+   "✓ 백업 보냄: \\1(\\2)"
+  ],
+  [
+   "↓ (.+) \\((.+)\\) → (.+)",
+   "↓ \\1(\\2) → \\3"
+  ]
+ ]
+}

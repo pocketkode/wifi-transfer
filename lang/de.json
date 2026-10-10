@@ -1,0 +1,93 @@
+{
+ "texts": {
+  "✓ Updated to version {v}. Your settings were kept.": "✓ Auf Version {v} aktualisiert. Die Einstellungen blieben erhalten.",
+  "Language: {name}": "Sprache: {name}",
+  "Update available: version {v}. Update it from the transfer page.": "Update verfügbar: Version {v}. Aktualisiere über die Transferseite.",
+  "Or open in a browser:": "Oder im Browser öffnen:",
+  "Waiting for your phone or PC…": "Warte auf dein Handy oder deinen PC…",
+  "Version {bad} didn't start, so Wi-Fi Transfer went back to {v}.": "Version {bad} ist nicht gestartet, daher ist Wi-Fi Transfer zu {v} zurückgekehrt.",
+  "Starting…": "Starte…",
+  "Wi-Fi is off": "WLAN ist aus",
+  "Turn on Wi-Fi in muOS (Configuration → Network). Transfer starts automatically once connected.": "Schalte WLAN in muOS ein (Configuration → Network). Die Übertragung startet automatisch, sobald die Verbindung steht.",
+  "Transfer stopped": "Übertragung gestoppt",
+  "Couldn't start": "Konnte nicht starten",
+  "Connected · 1 device": "Verbunden · 1 Gerät",
+  "Connected · {n} devices": "Verbunden · {n} Geräte",
+  "Full SD card backup: don't turn off the game console": "Vollständige SD-Karten-Sicherung: Handheld nicht ausschalten",
+  "{done} of {total}": "{done} von {total}",
+  "{pct}% of {total}": "{pct} % von {total}",
+  "Anyone on this Wi-Fi with the PIN can manage your files.": "Jeder in diesem WLAN mit der PIN kann deine Dateien verwalten.",
+  "The transfer page is closed.": "Die Transferseite ist geschlossen.",
+  "Quit": "Beenden",
+  "Language": "Sprache",
+  "Start again": "Neu starten",
+  "Stopped after {n} minutes without activity.": "Nach {n} Minuten ohne Aktivität gestoppt.",
+  "Press again to stop the transfer": "Nochmal drücken, um die Übertragung zu stoppen",
+  "Stop": "Stopp",
+  "New PIN": "Neue PIN",
+  "Update: download started from the page": "Update: Download über die Seite gestartet",
+  "Backup cancelled from the page": "Sicherung über die Seite abgebrochen",
+  "Couldn't make the SD card writable again. Restart the game console.": "Die SD-Karte konnte nicht wieder beschreibbar gemacht werden. Starte den Handheld neu.",
+  "ARCHIVE (install with Archive Manager)": "ARCHIVE (mit Archive Manager installieren)",
+  "Hide": "Ausblenden",
+  "Auto": "Automatisch",
+  "Free": "Kostenlos",
+  "Back": "Zurück",
+  "Try again": "Erneut versuchen",
+  "Scan with your phone": "Mit dem Handy scannen",
+  "Cancel": "Abbrechen",
+  "Update": "Update",
+  "No internet connection. Turn on Wi-Fi in Configuration > Network.": "Keine Internetverbindung. Schalte WLAN unter Configuration > Network ein.",
+  "Not enough free space on SD card 1 for the update.": "Nicht genug freier Speicher auf SD-Karte 1 für das Update.",
+  "The download couldn't be verified (damaged or not from PocketKode). Nothing was changed.": "Der Download konnte nicht geprüft werden (beschädigt oder nicht von PocketKode). Nichts wurde geändert.",
+  "The update package is empty.": "Das Update-Paket ist leer.",
+  "The update couldn't be read. Nothing was changed.": "Das Update konnte nicht gelesen werden. Nichts wurde geändert.",
+  "✓ Back from the background: same PIN, and signed-in browsers stay signed in.": "✓ Zurück aus dem Hintergrund: gleiche PIN, angemeldete Browser bleiben angemeldet.",
+  "Wait until the transfer finishes, then try again.": "Warte, bis die Übertragung fertig ist, und versuch es dann noch einmal.",
+  "Running in the background": "Läuft im Hintergrund",
+  "The transfer page keeps working with the same address and PIN. Open Wi-Fi Transfer again to stop it.": "Die Übertragungsseite funktioniert weiter mit derselben Adresse und PIN. Öffne Wi-Fi Transfer erneut, um sie zu beenden.",
+  "Background": "Hintergrund"
+ },
+ "patterns": [
+  [
+   "New folder (.+)",
+   "Neuer Ordner \\1"
+  ],
+  [
+   "Renamed (.+) → (.*)",
+   "Umbenannt \\1 → \\2"
+  ],
+  [
+   "Deleted (.+)",
+   "Gelöscht \\1"
+  ],
+  [
+   "Connected: (.+)",
+   "Verbunden: \\1"
+  ],
+  [
+   "↑ Sent (.+)\\.zip \\((\\d+) files, (.+)\\)",
+   "↑ Gesendet \\1.zip (\\2 Dateien, \\3)"
+  ],
+  [
+   "↑ Sent (.+) \\((.+)\\)",
+   "↑ Gesendet \\1 (\\2)"
+  ],
+  [
+   "Backup started \\((.+) card\\)",
+   "Sicherung gestartet (\\1-Karte)"
+  ],
+  [
+   "Backup stopped: (.*)",
+   "Sicherung gestoppt: \\1"
+  ],
+  [
+   "✓ Backup sent: (.+) \\((.+)\\)",
+   "✓ Sicherung gesendet: \\1 (\\2)"
+  ],
+  [
+   "↓ (.+) \\((.+)\\) → (.+)",
+   "↓ \\1 (\\2) → \\3"
+  ]
+ ]
+}

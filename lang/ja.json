@@ -1,0 +1,93 @@
+{
+ "texts": {
+  "✓ Updated to version {v}. Your settings were kept.": "✓ バージョン {v} にアップデートしました。設定はそのままです。",
+  "Language: {name}": "言語：{name}",
+  "Update available: version {v}. Update it from the transfer page.": "アップデートがあります：バージョン {v}。転送ページからアップデートしてください。",
+  "Or open in a browser:": "またはブラウザーで開く：",
+  "Waiting for your phone or PC…": "スマホや PC を待っています…",
+  "Version {bad} didn't start, so Wi-Fi Transfer went back to {v}.": "バージョン {bad} が起動しなかったため、Wi-Fi Transfer は {v} に戻りました。",
+  "Starting…": "起動しています…",
+  "Wi-Fi is off": "Wi-Fi がオフです",
+  "Turn on Wi-Fi in muOS (Configuration → Network). Transfer starts automatically once connected.": "muOS で Wi-Fi をオンにしてください（Configuration → Network）。接続されると自動で転送が始まります。",
+  "Transfer stopped": "転送を停止しました",
+  "Couldn't start": "起動できませんでした",
+  "Connected · 1 device": "接続中 · 1 台",
+  "Connected · {n} devices": "接続中 · {n} 台",
+  "Full SD card backup: don't turn off the game console": "SD カード全体のバックアップ中：電源を切らないでください",
+  "{done} of {total}": "{total} 中 {done}",
+  "{pct}% of {total}": "{total} の {pct}%",
+  "Anyone on this Wi-Fi with the PIN can manage your files.": "この Wi-Fi で PIN を知っている人は、あなたのファイルを管理できます。",
+  "The transfer page is closed.": "転送ページは閉じています。",
+  "Quit": "終了",
+  "Language": "言語",
+  "Start again": "もう一度開始",
+  "Stopped after {n} minutes without activity.": "操作がないまま {n} 分たったので停止しました。",
+  "Press again to stop the transfer": "もう一度押すと転送を停止します",
+  "Stop": "停止",
+  "New PIN": "新しい PIN",
+  "Update: download started from the page": "アップデート：ページからダウンロードを開始",
+  "Backup cancelled from the page": "ページからバックアップを中止しました",
+  "Couldn't make the SD card writable again. Restart the game console.": "SD カードを書き込み可能に戻せませんでした。携帯ゲーム機を再起動してください。",
+  "ARCHIVE (install with Archive Manager)": "ARCHIVE（Archive Manager でインストール）",
+  "Hide": "非表示",
+  "Auto": "自動",
+  "Free": "無料",
+  "Back": "戻る",
+  "Try again": "もう一度",
+  "Scan with your phone": "スマホで読み取ってください",
+  "Cancel": "キャンセル",
+  "Update": "アップデート",
+  "No internet connection. Turn on Wi-Fi in Configuration > Network.": "インターネットに接続されていません。Configuration > Network で Wi-Fi をオンにしてください。",
+  "Not enough free space on SD card 1 for the update.": "SD カード 1 にアップデートのための空き容量が足りません。",
+  "The download couldn't be verified (damaged or not from PocketKode). Nothing was changed.": "ダウンロードを確認できませんでした（破損しているか、PocketKode のものではありません）。何も変更されていません。",
+  "The update package is empty.": "アップデートのパッケージが空です。",
+  "The update couldn't be read. Nothing was changed.": "アップデートを読み取れませんでした。何も変更されていません。",
+  "✓ Back from the background: same PIN, and signed-in browsers stay signed in.": "✓ バックグラウンドから戻りました：PIN は同じで、ログイン中のブラウザーもそのままです。",
+  "Wait until the transfer finishes, then try again.": "転送が終わってから、もう一度お試しください。",
+  "Running in the background": "バックグラウンドで実行中",
+  "The transfer page keeps working with the same address and PIN. Open Wi-Fi Transfer again to stop it.": "転送ページは同じアドレスと PIN で使い続けられます。止めるには Wi-Fi Transfer をもう一度開いてください。",
+  "Background": "バックグラウンド"
+ },
+ "patterns": [
+  [
+   "New folder (.+)",
+   "新しいフォルダー \\1"
+  ],
+  [
+   "Renamed (.+) → (.*)",
+   "名前を変更 \\1 → \\2"
+  ],
+  [
+   "Deleted (.+)",
+   "削除 \\1"
+  ],
+  [
+   "Connected: (.+)",
+   "接続：\\1"
+  ],
+  [
+   "↑ Sent (.+)\\.zip \\((\\d+) files, (.+)\\)",
+   "↑ 送信 \\1.zip（\\2 ファイル、\\3）"
+  ],
+  [
+   "↑ Sent (.+) \\((.+)\\)",
+   "↑ 送信 \\1（\\2）"
+  ],
+  [
+   "Backup started \\((.+) card\\)",
+   "バックアップを開始（\\1 のカード）"
+  ],
+  [
+   "Backup stopped: (.*)",
+   "バックアップ停止：\\1"
+  ],
+  [
+   "✓ Backup sent: (.+) \\((.+)\\)",
+   "✓ バックアップを送信：\\1（\\2）"
+  ],
+  [
+   "↓ (.+) \\((.+)\\) → (.+)",
+   "↓ \\1（\\2）→ \\3"
+  ]
+ ]
+}

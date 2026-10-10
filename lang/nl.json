@@ -1,0 +1,93 @@
+{
+ "texts": {
+  "✓ Updated to version {v}. Your settings were kept.": "✓ Bijgewerkt naar versie {v}. Je instellingen zijn bewaard.",
+  "Language: {name}": "Taal: {name}",
+  "Update available: version {v}. Update it from the transfer page.": "Update beschikbaar: versie {v}. Update via de overdrachtspagina.",
+  "Or open in a browser:": "Of open in een browser:",
+  "Waiting for your phone or PC…": "Wachten op je telefoon of pc…",
+  "Version {bad} didn't start, so Wi-Fi Transfer went back to {v}.": "Versie {bad} startte niet, dus Wi-Fi Transfer is teruggegaan naar {v}.",
+  "Starting…": "Starten…",
+  "Wi-Fi is off": "Wifi staat uit",
+  "Turn on Wi-Fi in muOS (Configuration → Network). Transfer starts automatically once connected.": "Zet wifi aan in muOS (Configuration → Network). De overdracht start vanzelf zodra er verbinding is.",
+  "Transfer stopped": "Overdracht gestopt",
+  "Couldn't start": "Kon niet starten",
+  "Connected · 1 device": "Verbonden · 1 apparaat",
+  "Connected · {n} devices": "Verbonden · {n} apparaten",
+  "Full SD card backup: don't turn off the game console": "Volledige SD-kaartback-up: zet de handheld niet uit",
+  "{done} of {total}": "{done} van {total}",
+  "{pct}% of {total}": "{pct}% van {total}",
+  "Anyone on this Wi-Fi with the PIN can manage your files.": "Iedereen op deze wifi met de pincode kan je bestanden beheren.",
+  "The transfer page is closed.": "De overdrachtspagina is gesloten.",
+  "Quit": "Stoppen",
+  "Language": "Taal",
+  "Start again": "Opnieuw starten",
+  "Stopped after {n} minutes without activity.": "Gestopt na {n} minuten zonder activiteit.",
+  "Press again to stop the transfer": "Druk nog eens om de overdracht te stoppen",
+  "Stop": "Stoppen",
+  "New PIN": "Nieuwe pincode",
+  "Update: download started from the page": "Update: download gestart via de pagina",
+  "Backup cancelled from the page": "Back-up geannuleerd via de pagina",
+  "Couldn't make the SD card writable again. Restart the game console.": "Kon de SD-kaart niet weer schrijfbaar maken. Herstart de handheld.",
+  "ARCHIVE (install with Archive Manager)": "ARCHIVE (installeren met Archive Manager)",
+  "Hide": "Verbergen",
+  "Auto": "Automatisch",
+  "Free": "Gratis",
+  "Back": "Terug",
+  "Try again": "Opnieuw",
+  "Scan with your phone": "Scan met je telefoon",
+  "Cancel": "Annuleren",
+  "Update": "Update",
+  "No internet connection. Turn on Wi-Fi in Configuration > Network.": "Geen internetverbinding. Zet wifi aan in Configuration > Network.",
+  "Not enough free space on SD card 1 for the update.": "Niet genoeg vrije ruimte op SD-kaart 1 voor de update.",
+  "The download couldn't be verified (damaged or not from PocketKode). Nothing was changed.": "De download kon niet worden gecontroleerd (beschadigd of niet van PocketKode). Er is niets veranderd.",
+  "The update package is empty.": "Het updatepakket is leeg.",
+  "The update couldn't be read. Nothing was changed.": "De update kon niet worden gelezen. Er is niets veranderd.",
+  "✓ Back from the background: same PIN, and signed-in browsers stay signed in.": "✓ Terug uit de achtergrond: dezelfde pincode, en ingelogde browsers blijven ingelogd.",
+  "Wait until the transfer finishes, then try again.": "Wacht tot de overdracht klaar is en probeer het dan opnieuw.",
+  "Running in the background": "Draait op de achtergrond",
+  "The transfer page keeps working with the same address and PIN. Open Wi-Fi Transfer again to stop it.": "De overdrachtspagina blijft werken met hetzelfde adres en dezelfde pincode. Open Wi-Fi Transfer opnieuw om te stoppen.",
+  "Background": "Achtergrond"
+ },
+ "patterns": [
+  [
+   "New folder (.+)",
+   "Nieuwe map \\1"
+  ],
+  [
+   "Renamed (.+) → (.*)",
+   "Hernoemd \\1 → \\2"
+  ],
+  [
+   "Deleted (.+)",
+   "Verwijderd \\1"
+  ],
+  [
+   "Connected: (.+)",
+   "Verbonden: \\1"
+  ],
+  [
+   "↑ Sent (.+)\\.zip \\((\\d+) files, (.+)\\)",
+   "↑ Verstuurd \\1.zip (\\2 bestanden, \\3)"
+  ],
+  [
+   "↑ Sent (.+) \\((.+)\\)",
+   "↑ Verstuurd \\1 (\\2)"
+  ],
+  [
+   "Backup started \\((.+) card\\)",
+   "Back-up gestart (kaart van \\1)"
+  ],
+  [
+   "Backup stopped: (.*)",
+   "Back-up gestopt: \\1"
+  ],
+  [
+   "✓ Backup sent: (.+) \\((.+)\\)",
+   "✓ Back-up verstuurd: \\1 (\\2)"
+  ],
+  [
+   "↓ (.+) \\((.+)\\) → (.+)",
+   "↓ \\1 (\\2) → \\3"
+  ]
+ ]
+}

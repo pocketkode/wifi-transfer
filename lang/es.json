@@ -1,0 +1,93 @@
+{
+ "texts": {
+  "✓ Updated to version {v}. Your settings were kept.": "✓ Actualizada a la versión {v}. Tus ajustes se han conservado.",
+  "Language: {name}": "Idioma: {name}",
+  "Update available: version {v}. Update it from the transfer page.": "Actualización disponible: versión {v}. Actualiza desde la página de transferencia.",
+  "Or open in a browser:": "O ábrelo en un navegador:",
+  "Waiting for your phone or PC…": "Esperando a tu móvil o PC…",
+  "Version {bad} didn't start, so Wi-Fi Transfer went back to {v}.": "La versión {bad} no arrancó, así que Wi-Fi Transfer volvió a la {v}.",
+  "Starting…": "Iniciando…",
+  "Wi-Fi is off": "El Wi-Fi está apagado",
+  "Turn on Wi-Fi in muOS (Configuration → Network). Transfer starts automatically once connected.": "Activa el Wi-Fi en muOS (Configuration → Network). La transferencia empieza sola al conectarse.",
+  "Transfer stopped": "Transferencia detenida",
+  "Couldn't start": "No se pudo iniciar",
+  "Connected · 1 device": "Conectado · 1 dispositivo",
+  "Connected · {n} devices": "Conectados · {n} dispositivos",
+  "Full SD card backup: don't turn off the game console": "Copia completa de la tarjeta SD: no apagues la consola",
+  "{done} of {total}": "{done} de {total}",
+  "{pct}% of {total}": "{pct}% de {total}",
+  "Anyone on this Wi-Fi with the PIN can manage your files.": "Cualquiera en este Wi-Fi con el PIN puede gestionar tus archivos.",
+  "The transfer page is closed.": "La página de transferencia está cerrada.",
+  "Quit": "Salir",
+  "Language": "Idioma",
+  "Start again": "Iniciar de nuevo",
+  "Stopped after {n} minutes without activity.": "Detenida tras {n} minutos sin actividad.",
+  "Press again to stop the transfer": "Pulsa otra vez para detener la transferencia",
+  "Stop": "Detener",
+  "New PIN": "Nuevo PIN",
+  "Update: download started from the page": "Actualización: descarga iniciada desde la página",
+  "Backup cancelled from the page": "Copia cancelada desde la página",
+  "Couldn't make the SD card writable again. Restart the game console.": "No se pudo volver a permitir la escritura en la tarjeta SD. Reinicia la consola.",
+  "ARCHIVE (install with Archive Manager)": "ARCHIVE (instalar con Archive Manager)",
+  "Hide": "Ocultar",
+  "Auto": "Automático",
+  "Free": "Gratis",
+  "Back": "Atrás",
+  "Try again": "Reintentar",
+  "Scan with your phone": "Escanea con el móvil",
+  "Cancel": "Cancelar",
+  "Update": "Actualizar",
+  "No internet connection. Turn on Wi-Fi in Configuration > Network.": "Sin conexión a internet. Activa el Wi-Fi en Configuration > Network.",
+  "Not enough free space on SD card 1 for the update.": "No hay espacio libre suficiente en la tarjeta SD 1 para la actualización.",
+  "The download couldn't be verified (damaged or not from PocketKode). Nothing was changed.": "No se pudo verificar la descarga (dañada o no es de PocketKode). No se ha cambiado nada.",
+  "The update package is empty.": "El paquete de actualización está vacío.",
+  "The update couldn't be read. Nothing was changed.": "No se pudo leer la actualización. No se ha cambiado nada.",
+  "✓ Back from the background: same PIN, and signed-in browsers stay signed in.": "✓ De vuelta del segundo plano: el mismo PIN, y los navegadores conectados siguen conectados.",
+  "Wait until the transfer finishes, then try again.": "Espera a que termine la transferencia y vuelve a intentarlo.",
+  "Running in the background": "Funcionando en segundo plano",
+  "The transfer page keeps working with the same address and PIN. Open Wi-Fi Transfer again to stop it.": "La página de transferencia sigue funcionando con la misma dirección y PIN. Abre Wi-Fi Transfer de nuevo para detenerla.",
+  "Background": "Segundo plano"
+ },
+ "patterns": [
+  [
+   "New folder (.+)",
+   "Nueva carpeta \\1"
+  ],
+  [
+   "Renamed (.+) → (.*)",
+   "Renombrado \\1 → \\2"
+  ],
+  [
+   "Deleted (.+)",
+   "Borrado \\1"
+  ],
+  [
+   "Connected: (.+)",
+   "Conectado: \\1"
+  ],
+  [
+   "↑ Sent (.+)\\.zip \\((\\d+) files, (.+)\\)",
+   "↑ Enviado \\1.zip (\\2 archivos, \\3)"
+  ],
+  [
+   "↑ Sent (.+) \\((.+)\\)",
+   "↑ Enviado \\1 (\\2)"
+  ],
+  [
+   "Backup started \\((.+) card\\)",
+   "Copia iniciada (tarjeta de \\1)"
+  ],
+  [
+   "Backup stopped: (.*)",
+   "Copia detenida: \\1"
+  ],
+  [
+   "✓ Backup sent: (.+) \\((.+)\\)",
+   "✓ Copia enviada: \\1 (\\2)"
+  ],
+  [
+   "↓ (.+) \\((.+)\\) → (.+)",
+   "↓ \\1 (\\2) → \\3"
+  ]
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "texts": {
+  "✓ Updated to version {v}. Your settings were kept.": "✓ Обновлено до версии {v}. Настройки сохранены.",
+  "Language: {name}": "Язык: {name}",
+  "Update available: version {v}. Update it from the transfer page.": "Доступно обновление: версия {v}. Обновите на странице передачи.",
+  "Or open in a browser:": "Или откройте в браузере:",
+  "Waiting for your phone or PC…": "Ждём телефон или ПК…",
+  "Version {bad} didn't start, so Wi-Fi Transfer went back to {v}.": "Версия {bad} не запустилась, поэтому Wi-Fi Transfer вернулся к {v}.",
+  "Starting…": "Запуск…",
+  "Wi-Fi is off": "Wi-Fi выключен",
+  "Turn on Wi-Fi in muOS (Configuration → Network). Transfer starts automatically once connected.": "Включите Wi-Fi в muOS (Configuration → Network). Передача начнётся сама после подключения.",
+  "Transfer stopped": "Передача остановлена",
+  "Couldn't start": "Не удалось запустить",
+  "Connected · 1 device": "Подключено · 1 устройство",
+  "Connected · {n} devices": "Подключено устройств: {n}",
+  "Full SD card backup: don't turn off the game console": "Полная копия SD-карты: не выключайте консоль",
+  "{done} of {total}": "{done} из {total}",
+  "{pct}% of {total}": "{pct}% из {total}",
+  "Anyone on this Wi-Fi with the PIN can manage your files.": "Любой в этой сети Wi-Fi, у кого есть PIN, может управлять вашими файлами.",
+  "The transfer page is closed.": "Страница передачи закрыта.",
+  "Quit": "Выход",
+  "Language": "Язык",
+  "Start again": "Начать снова",
+  "Stopped after {n} minutes without activity.": "Остановлено после {n} мин без активности.",
+  "Press again to stop the transfer": "Нажмите ещё раз, чтобы остановить передачу",
+  "Stop": "Стоп",
+  "New PIN": "Новый PIN",
+  "Update: download started from the page": "Обновление: загрузка начата со страницы",
+  "Backup cancelled from the page": "Резервное копирование отменено со страницы",
+  "Couldn't make the SD card writable again. Restart the game console.": "Не удалось снова разрешить запись на SD-карту. Перезагрузите консоль.",
+  "ARCHIVE (install with Archive Manager)": "ARCHIVE (установка через Archive Manager)",
+  "Hide": "Скрыть",
+  "Auto": "Авто",
+  "Free": "Бесплатно",
+  "Back": "Назад",
+  "Try again": "Повторить",
+  "Scan with your phone": "Отсканируйте телефоном",
+  "Cancel": "Отмена",
+  "Update": "Обновление",
+  "No internet connection. Turn on Wi-Fi in Configuration > Network.": "Нет интернета. Включите Wi-Fi в Configuration > Network.",
+  "Not enough free space on SD card 1 for the update.": "На SD-карте 1 не хватает места для обновления.",
+  "The download couldn't be verified (damaged or not from PocketKode). Nothing was changed.": "Не удалось проверить загрузку (повреждена или не от PocketKode). Ничего не изменено.",
+  "The update package is empty.": "Пакет обновления пуст.",
+  "The update couldn't be read. Nothing was changed.": "Не удалось прочитать обновление. Ничего не изменено.",
+  "✓ Back from the background: same PIN, and signed-in browsers stay signed in.": "✓ Возврат из фона: тот же PIN, а вошедшие браузеры остаются в системе.",
+  "Wait until the transfer finishes, then try again.": "Дождитесь окончания передачи и попробуйте снова.",
+  "Running in the background": "Работает в фоне",
+  "The transfer page keeps working with the same address and PIN. Open Wi-Fi Transfer again to stop it.": "Страница передачи продолжает работать с тем же адресом и PIN. Чтобы остановить, снова откройте Wi-Fi Transfer.",
+  "Background": "В фоне"
+ },
+ "patterns": [
+  [
+   "New folder (.+)",
+   "Новая папка \\1"
+  ],
+  [
+   "Renamed (.+) → (.*)",
+   "Переименовано \\1 → \\2"
+  ],
+  [
+   "Deleted (.+)",
+   "Удалено \\1"
+  ],
+  [
+   "Connected: (.+)",
+   "Подключено: \\1"
+  ],
+  [
+   "↑ Sent (.+)\\.zip \\((\\d+) files, (.+)\\)",
+   "↑ Отправлено \\1.zip (файлов: \\2, \\3)"
+  ],
+  [
+   "↑ Sent (.+) \\((.+)\\)",
+   "↑ Отправлено \\1 (\\2)"
+  ],
+  [
+   "Backup started \\((.+) card\\)",
+   "Копирование начато (карта \\1)"
+  ],
+  [
+   "Backup stopped: (.*)",
+   "Копирование остановлено: \\1"
+  ],
+  [
+   "✓ Backup sent: (.+) \\((.+)\\)",
+   "✓ Копия отправлена: \\1 (\\2)"
+  ],
+  [
+   "↓ (.+) \\((.+)\\) → (.+)",
+   "↓ \\1 (\\2) → \\3"
+  ]
+ ]
+}

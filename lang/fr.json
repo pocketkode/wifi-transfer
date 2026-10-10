@@ -1,0 +1,93 @@
+{
+ "texts": {
+  "Scan with your phone": "Scanner au téléphone",
+  "✓ Updated to version {v}. Your settings were kept.": "✓ Mise à jour vers la version {v}. Vos réglages sont conservés.",
+  "Language: {name}": "Langue : {name}",
+  "Update available: version {v}. Update it from the transfer page.": "Mise à jour disponible : version {v}. Lancez-la depuis la page de transfert.",
+  "Or open in a browser:": "Ou ouvrez dans un navigateur :",
+  "Waiting for your phone or PC…": "En attente de votre téléphone ou PC…",
+  "Version {bad} didn't start, so Wi-Fi Transfer went back to {v}.": "La version {bad} n’a pas démarré, Wi-Fi Transfer est donc revenu à la {v}.",
+  "Starting…": "Démarrage…",
+  "Wi-Fi is off": "Le Wi-Fi est désactivé",
+  "Turn on Wi-Fi in muOS (Configuration → Network). Transfer starts automatically once connected.": "Activez le Wi-Fi dans muOS (Configuration → Network). Le transfert démarre tout seul une fois connecté.",
+  "Transfer stopped": "Transfert arrêté",
+  "Couldn't start": "Impossible de démarrer",
+  "Connected · 1 device": "Connecté · 1 appareil",
+  "Connected · {n} devices": "Connectés · {n} appareils",
+  "Full SD card backup: don't turn off the game console": "Sauvegarde complète de la carte SD : n’éteignez pas la console",
+  "{done} of {total}": "{done} sur {total}",
+  "{pct}% of {total}": "{pct} % de {total}",
+  "Anyone on this Wi-Fi with the PIN can manage your files.": "Toute personne sur ce Wi-Fi avec le PIN peut gérer vos fichiers.",
+  "The transfer page is closed.": "La page de transfert est fermée.",
+  "Quit": "Quitter",
+  "Language": "Langue",
+  "Start again": "Redémarrer",
+  "Stopped after {n} minutes without activity.": "Arrêté après {n} minutes sans activité.",
+  "Press again to stop the transfer": "Appuyez à nouveau pour arrêter le transfert",
+  "Stop": "Arrêter",
+  "New PIN": "Nouveau PIN",
+  "Update: download started from the page": "Mise à jour : téléchargement lancé depuis la page",
+  "Backup cancelled from the page": "Sauvegarde annulée depuis la page",
+  "Couldn't make the SD card writable again. Restart the game console.": "Impossible de rendre la carte SD à nouveau inscriptible. Redémarrez la console.",
+  "ARCHIVE (install with Archive Manager)": "ARCHIVE (installer avec Archive Manager)",
+  "Hide": "Masquer",
+  "Auto": "Automatique",
+  "Free": "Gratuit",
+  "Back": "Retour",
+  "Try again": "Réessayer",
+  "Cancel": "Annuler",
+  "Update": "Mise à jour",
+  "No internet connection. Turn on Wi-Fi in Configuration > Network.": "Pas de connexion Internet. Activez le Wi-Fi dans Configuration > Network.",
+  "Not enough free space on SD card 1 for the update.": "Pas assez d’espace libre sur la carte SD 1 pour la mise à jour.",
+  "The download couldn't be verified (damaged or not from PocketKode). Nothing was changed.": "Le téléchargement n’a pas pu être vérifié (endommagé ou ne venant pas de PocketKode). Rien n’a été modifié.",
+  "The update package is empty.": "Le paquet de mise à jour est vide.",
+  "The update couldn't be read. Nothing was changed.": "La mise à jour n’a pas pu être lue. Rien n’a été modifié.",
+  "✓ Back from the background: same PIN, and signed-in browsers stay signed in.": "✓ De retour de l’arrière-plan : même PIN, et les navigateurs connectés le restent.",
+  "Wait until the transfer finishes, then try again.": "Attendez la fin du transfert, puis réessayez.",
+  "Running in the background": "Fonctionne en arrière-plan",
+  "The transfer page keeps working with the same address and PIN. Open Wi-Fi Transfer again to stop it.": "La page de transfert continue de fonctionner avec la même adresse et le même PIN. Rouvrez Wi-Fi Transfer pour l’arrêter.",
+  "Background": "Arrière-plan"
+ },
+ "patterns": [
+  [
+   "New folder (.+)",
+   "Nouveau dossier \\1"
+  ],
+  [
+   "Renamed (.+) → (.*)",
+   "Renommé \\1 → \\2"
+  ],
+  [
+   "Deleted (.+)",
+   "Supprimé \\1"
+  ],
+  [
+   "Connected: (.+)",
+   "Connecté : \\1"
+  ],
+  [
+   "↑ Sent (.+)\\.zip \\((\\d+) files, (.+)\\)",
+   "↑ Envoyé \\1.zip (\\2 fichiers, \\3)"
+  ],
+  [
+   "↑ Sent (.+) \\((.+)\\)",
+   "↑ Envoyé \\1 (\\2)"
+  ],
+  [
+   "Backup started \\((.+) card\\)",
+   "Sauvegarde lancée (carte de \\1)"
+  ],
+  [
+   "Backup stopped: (.*)",
+   "Sauvegarde arrêtée : \\1"
+  ],
+  [
+   "✓ Backup sent: (.+) \\((.+)\\)",
+   "✓ Sauvegarde envoyée : \\1 (\\2)"
+  ],
+  [
+   "↓ (.+) \\((.+)\\) → (.+)",
+   "↓ \\1 (\\2) → \\3"
+  ]
+ ]
+}
