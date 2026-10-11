@@ -9,7 +9,8 @@ Tested on the Anbernic RG40XXH with muOS 2601.0 Jacaranda. Other muOS devices wi
 
 | | | |
 |---|---|---|
-| ![SD card tabs](screenshots/home.png) | ![Search on both SD cards](screenshots/search.png) | ![Full backup of SD card 1](screenshots/backup-ready.png) |
+| ![SD card tabs](screenshots/home.png) | ![A folder with upload buttons](screenshots/roms.png) | ![Select several files: download, move, copy or delete](screenshots/gba.png) |
+| ![Search on both SD cards](screenshots/search.png) | ![Full backup of SD card 1](screenshots/backup-ready.png) | ![Backup in progress](screenshots/backup-running.png) |
 
 ## Install
 
