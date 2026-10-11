@@ -140,7 +140,7 @@ Wi-Fi Transfer is an independent app, not affiliated with any of them, muOS or A
 ## License
 
 © 2026 PocketKode. Wi-Fi Transfer is free software under the **GNU General Public License v3** (GPL-3.0-only): you may
-use, study, change and share it under that license; see [LICENSE](LICENSE). Bundled third-party parts keep their own
+use, study, change and share it under that license; see [LICENSE](LICENSE) and [NOTICE](NOTICE). Bundled third-party parts keep their own
 licenses (see the `licenses/` folder).
 
 The name "PocketKode", the name "Wi-Fi Transfer" as used by PocketKode, and the PocketKode and app icons are not
