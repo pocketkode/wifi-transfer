@@ -1,4 +1,4 @@
-# © 2026 PocketKode. All rights reserved.
+# © 2026 PocketKode · SPDX-License-Identifier: GPL-3.0-only
 """The web server the phone or PC talks to. Runs in a background thread while the app is open.
 
 Security: a new random PIN each time the app starts; after login the browser gets a session

@@ -1,5 +1,4 @@
-# SPDX-License-Identifier: MIT
-# Copyright (c) 2026 PocketKode
+# © 2026 PocketKode · SPDX-License-Identifier: GPL-3.0-only
 """Full SD card backup: the whole system card (muOS, settings, games, saves) as one .img.gz.
 
 Written back with Rufus / balenaEtcher / Raspberry Pi Imager it gives an exact copy of the card,

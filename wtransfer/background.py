@@ -1,4 +1,4 @@
-# © 2026 PocketKode. All rights reserved.
+# © 2026 PocketKode · SPDX-License-Identifier: GPL-3.0-only
 """Wi-Fi Transfer in the background: the transfer page keeps working while muOS is back in its menu.
 
 The app hands over (X on its screen): it saves the PIN, the signed-in browsers and the port in data/background.json,

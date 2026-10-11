@@ -1,4 +1,4 @@
-# © 2026 PocketKode. All rights reserved.
+# © 2026 PocketKode · SPDX-License-Identifier: GPL-3.0-only
 """The game console's screen: QR code, address and PIN while the transfer server runs.
 Free: everything, including the full SD card backup, works without an account."""
 import os
@@ -15,7 +15,7 @@ from .server import TransferServer, fmt_size, local_ip
 from .settings import load_config, make_roots  # noqa: F401 (load_config: also used by older callers)
 from .ui import C, H, UI, W
 
-APP_VERSION = "2.0.0"
+APP_VERSION = "2.0.1"
 # Files of earlier Wi-Fi Transfer builds (loose modules, the PRO module wtpro/, its licence file). Installing over
 # one only adds and replaces files, so once this version has started, the old ones go.
 OLD_FILES = ("activation", "app", "backup", "ed25519", "files", "input", "keepawake", "lang", "lang_common",

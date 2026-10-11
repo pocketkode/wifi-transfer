@@ -1,4 +1,4 @@
-# © 2026 PocketKode. All rights reserved.
+# © 2026 PocketKode · SPDX-License-Identifier: GPL-3.0-only
 """config.ini and the folders the transfer page offers, shared by the app and its background process (no screen)."""
 import configparser
 import os

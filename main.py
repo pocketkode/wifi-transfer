@@ -1,4 +1,4 @@
-# © 2026 PocketKode. All rights reserved.
+# © 2026 PocketKode · SPDX-License-Identifier: GPL-3.0-only
 """Wi-Fi Transfer - move files to and from a muOS game console from any phone or PC browser. Entry point."""
 import json
 import os

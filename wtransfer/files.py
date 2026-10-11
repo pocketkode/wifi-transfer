@@ -1,4 +1,4 @@
-# © 2026 PocketKode. All rights reserved.
+# © 2026 PocketKode · SPDX-License-Identifier: GPL-3.0-only
 """What the transfer page may see and change: a few named folders on the SD card(s), nothing else.
 
 Every path from the browser is (root id, relative path, name). It's checked here so it can never

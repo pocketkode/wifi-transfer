@@ -2,7 +2,7 @@
 # HELP: Transfer files to and from your game console from a phone or PC browser
 # ICON: wifitransfer
 # GRID: Wi-Fi Transfer
-# © 2026 PocketKode. All rights reserved.
+# © 2026 PocketKode · SPDX-License-Identifier: GPL-3.0-only
 
 . /opt/muos/script/var/func.sh
 
