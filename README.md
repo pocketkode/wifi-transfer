@@ -1,7 +1,7 @@
 # Wi-Fi Transfer
 
 **Move files to and from your muOS game console from any phone or PC browser**, and back up the whole SD card. No
-cables, card reader or extra apps needed. Free. No account, no ads, no tracking.
+cables, card reader or extra apps needed.
 
 Tested on the Anbernic RG40XXH with muOS 2601.0 Jacaranda. Other muOS devices with Wi-Fi may work: reports are welcome.
 
