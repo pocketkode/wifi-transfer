@@ -5,6 +5,12 @@ cables, card reader or extra apps needed. Free. No account, no ads, no tracking.
 
 Tested on the Anbernic RG40XXH with muOS 2601.0 Jacaranda. Other muOS devices with Wi-Fi may work: reports are welcome.
 
+![Wi-Fi Transfer on the game console](screenshots/handheld.png)
+
+| | | |
+|---|---|---|
+| ![SD card tabs](screenshots/home.png) | ![Search on both SD cards](screenshots/search.png) | ![Full backup of SD card 1](screenshots/backup-ready.png) |
+
 ## Install
 
 Download Wi-Fi Transfer from [pocketkode.com](https://pocketkode.com/apps/wifi-transfer/), copy the `.muxapp` file to the `ARCHIVE`
