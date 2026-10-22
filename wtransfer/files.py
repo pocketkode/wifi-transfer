@@ -95,6 +95,20 @@ def file_ext(name):
     return ".p8.png" if low.endswith(".p8.png") else os.path.splitext(low)[1]
 
 
+def card_size(path):
+    """Size of the whole SD card holding `path`, as the card reports it (sysfs), or None when unknown. The
+    mounted folder is often only one partition (on SD card 1, the system has its own)."""
+    try:
+        dev = os.stat(path).st_dev
+        blk = os.path.realpath(f"/sys/dev/block/{os.major(dev)}:{os.minor(dev)}")
+        if os.path.exists(os.path.join(blk, "partition")):
+            blk = os.path.dirname(blk)
+        with open(os.path.join(blk, "size")) as f:
+            return int(f.read()) * 512 or None
+    except (OSError, ValueError):
+        return None
+
+
 class Roots:
     def __init__(self, roms_path="/mnt/mmc/ROMS", share_dir="/opt/muos/share", candidates=None):
         self.roots = {}
@@ -139,11 +153,13 @@ class Roots:
 
     # --- operations
     def usage(self, rid):
-        u = shutil.disk_usage(self.root(rid))
-        return {"free": u.free, "total": u.total}
+        path = self.root(rid)
+        u = shutil.disk_usage(path)
+        return {"free": u.free, "total": card_size(path) or u.total}
 
     def storage(self):
-        """Free and total space of each SD card holding one of the folders: [{card, free, total}], card 1 first.
+        """Free space and whole-card size of each SD card holding one of the folders: [{card, free, total}], card 1
+        first.
         Folders on the same card share it (same device); card 2 is the one mounted at /mnt/sdcard (folder "sd2")."""
         cards = {}
         for r in self.roots.values():
@@ -156,7 +172,7 @@ class Roots:
         out = []
         for c in cards.values():
             u = shutil.disk_usage(c["path"])
-            out.append({"card": c["card"], "free": u.free, "total": u.total})
+            out.append({"card": c["card"], "free": u.free, "total": card_size(c["path"]) or u.total})
         return sorted(out, key=lambda c: c["card"])
 
     def lost_space(self, rid, time_limit=20.0):

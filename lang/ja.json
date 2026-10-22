@@ -23,7 +23,6 @@
   "Start again": "もう一度開始",
   "Stopped after {n} minutes without activity.": "操作がないまま {n} 分たったので停止しました。",
   "Press again to stop the transfer": "もう一度押すと転送を停止します",
-  "Stop": "停止",
   "New PIN": "新しい PIN",
   "Update: download started from the page": "アップデート：ページからダウンロードを開始",
   "Backup cancelled from the page": "ページからバックアップを中止しました",

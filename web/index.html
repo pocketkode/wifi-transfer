@@ -27,7 +27,10 @@
   .storage { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: .85rem; color: var(--dim); }
   .storage:empty { display: none; }
   .storage span { display: inline-flex; align-items: center; gap: 8px; }
-  .storage meter { width: 70px; height: 8px; }
+  .storage .usebar { width: 70px; height: 8px; border-radius: 999px; background: var(--surface-2); border: 1px solid var(--border);
+    overflow: hidden; }
+  .storage .usebar i { display: block; height: 100%; background: var(--accent); }  /* filled = used */
+  .storage .usebar.full i { background: var(--danger); }
   .storage .low { color: var(--danger); font-weight: 600; }
   header img { width: 30px; height: 30px; }
   header h1 { font-size: 1.1rem; margin: 0; flex: 1; }
@@ -114,7 +117,9 @@
   .upnote li { margin: 1px 0; }
   .cardtabs { display: flex; margin: 4px 0 14px; border-bottom: 1px solid var(--border); }
   .cardtabs button { flex: 1; background: none; border: 0; border-bottom: 3px solid transparent; margin-bottom: -1px;
-    padding: 10px 8px; font: inherit; font-weight: 600; color: var(--dim); cursor: pointer; }
+    padding: 10px 8px; font: inherit; font-weight: 600; color: var(--dim); cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 6px; }
+  .cardtabs svg { width: 20px; height: 20px; flex: none; }
   .cardtabs button[aria-selected="true"] { color: var(--accent-strong); border-bottom-color: var(--accent); }
   .tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
   .tile { text-align: left; padding: 16px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border);
@@ -2603,6 +2608,9 @@ async function start() {
 function rootInfo(id) { return state.roots.find((r) => r.id === id); }
 
 const cardName = (n) => `${t("sdCard")} ${n}`;
+const SD_ICON = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h7l4 4v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6z"/><path d="M10 7v3M13 7v3M16 9v1"/></svg>`;
+// A card's tab: the SD card icon and its number (the full name for screen readers and on hover)
+const cardTab = (b, n) => { b.innerHTML = `${SD_ICON}<span>${n}</span>`; b.setAttribute("aria-label", cardName(n)); b.title = cardName(n); };
 const WHOLE = ["sd1", "sd2"];  // each SD card as it is
 const cardRoot = (n) => n === 2 ? "sd2" : "sd1";
 // Inside SD card 1's MUOS folder (muOS itself): deleting or renaming there first warns
@@ -2643,8 +2651,9 @@ async function refreshStorage() {
     const sp = document.createElement("span");
     const label = cardName(c.card);
     sp.textContent = `${label}: ${t("freeOf", { free: size(c.free), total: size(c.total) })}`;
-    const m = document.createElement("meter"); m.min = 0; m.max = c.total || 1; m.value = c.total - c.free;
-    m.high = (c.total || 1) * 0.9; m.optimum = 0; sp.prepend(m);
+    const pct = c.total ? Math.min(100, Math.max(0, c.total - c.free) / c.total * 100) : 0;  // used: all but the free space
+    const bar = document.createElement("span"); bar.className = pct >= 90 ? "usebar full" : "usebar"; bar.title = `${Math.round(pct)}%`;
+    bar.innerHTML = `<i style="width:${pct.toFixed(1)}%"></i>`; sp.prepend(bar);
     if (c.free < 1024 ** 3) sp.classList.add("low");  // under 1 GB left
     el.appendChild(sp);
   }
@@ -2679,7 +2688,7 @@ async function go(root, path) {
   const absent = !rootInfo(root);                   // the second card's tab, without a second card
   state.searching = null; state.root = absent ? null : root; state.path = path; state.home = home && !absent; crumbs();
   for (const b of document.querySelectorAll("#cardTabs button")) {
-    b.textContent = cardName(+b.dataset.card); b.setAttribute("aria-selected", String(+b.dataset.card === card));
+    cardTab(b, +b.dataset.card); b.setAttribute("aria-selected", String(+b.dataset.card === card));
   }
   $("cardTabs").classList.toggle("hidden", !home);
   $("pathBar").classList.toggle("hidden", home);  // on a card's tab the tabs already say which card
@@ -2799,7 +2808,7 @@ function pickFolder(title, okText) {
     const show = async () => {
       $("pickTabs").innerHTML = "";
       for (const id of cards) {
-        const b = document.createElement("button"); b.type = "button"; b.textContent = cardName(cardOf(id));
+        const b = document.createElement("button"); b.type = "button"; cardTab(b, cardOf(id));
         b.setAttribute("aria-selected", String(id === root)); b.onclick = () => { root = id; path = ""; show(); };
         $("pickTabs").appendChild(b);
       }
