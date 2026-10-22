@@ -110,9 +110,10 @@ console. No ads, no analytics, no tracking. More on [pocketkode.com/privacy](htt
 
 ## Build
 
-`bash build.sh` (needs bash, curl, unzip, zip, shasum and python3) produces `dist/WiFiTransfer.muxapp`: the app's
-Python source and transfer page as they are, plus PySDL2, segno and the fonts. The app uses the Python 3, SDL2, SDL2_ttf
-and SDL2_image that come with muOS.
+`bash build.sh` (needs bash, curl, unzip, zip, shasum, python3 and Docker) produces `dist/WiFiTransfer.muxapp`: the
+app's modules compiled to native modules for muOS's Python 3.11 (Cython, in the container from `compile/`), the
+transfer page, PySDL2, segno and the fonts. The package's `NOTICE` says where the source of that exact version is (its
+tag here). The app uses the Python 3, SDL2, SDL2_ttf and SDL2_image that come with muOS.
 
 ## Third-party components
 

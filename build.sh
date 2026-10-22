@@ -5,9 +5,10 @@
 # Usage:   ./build.sh            build dist/WiFiTransfer.muxapp
 #          ./build.sh --fresh    re-download the bundled pieces
 #
-# Needs: bash, curl, unzip, zip, shasum and python3. The package holds the app's Python source as it is, plus
-# PySDL2, the segno QR code library and fonts (DejaVu Sans; Noto Sans JP, SC and KR for the other languages, checked
-# against their SHA-256). The console already has Python 3, SDL2, SDL2_ttf and SDL2_image.
+# Needs: bash, curl, unzip, zip, shasum, python3 and Docker. The package holds the app compiled to native modules for
+# muOS's Python 3.11 (its source is on GitHub, NOTICE says where), plus PySDL2, the segno QR code library and fonts
+# (DejaVu Sans; Noto Sans JP, SC and KR for the other languages, checked against their SHA-256). The console already
+# has Python 3, SDL2, SDL2_ttf and SDL2_image.
 set -euo pipefail
 cd "$(dirname "$0")"
 SRC="$PWD"
@@ -24,7 +25,7 @@ FONTS=(
 	"17_NotoSansKR.zip NotoSansKR-Regular.otf 69975a0ac8472717870aefeab0a4d52739308d90856b9955313b2ad5e0148d68"
 )
 
-for tool in curl unzip zip shasum python3; do
+for tool in curl unzip zip shasum python3 docker; do
 	command -v "$tool" >/dev/null || { echo "Missing tool: $tool"; exit 1; }
 done
 [ "${1:-}" = "--fresh" ] && rm -rf "$CACHE"
@@ -113,6 +114,20 @@ if [ "${NO_PACKAGE:-}" = "1" ]; then
 	echo "Staged: $STAGE"
 	exit 0
 fi
+echo "==> Compiling"
+# Packages hold no readable app code (RELEASE-POLICY rule 2): every module of wtransfer/ becomes a native module for
+# muOS's Python 3.11 (compile/, image "wt-compile"); only main.py and wtransfer/__init__.py stay as Python. The source of
+# this exact version stays public: the NOTICE in the package says where (GPL v3 section 6(d)).
+docker info >/dev/null 2>&1 || { echo "Docker isn't running. Start Docker Desktop and try again."; exit 1; }
+docker image inspect wt-compile >/dev/null 2>&1 || docker build -q -t wt-compile "$SRC/compile" >/dev/null
+docker run --rm --platform linux/arm64 -v "$STAGE":/app -v "$SRC/compile":/c:ro wt-compile python /c/compile.py /app wtransfer
+LEFT=$(find "$STAGE/wtransfer" -name "*.py" ! -name "__init__.py"; find "$STAGE" -maxdepth 1 -name "*.py" ! -name "main.py")
+if [ -n "$LEFT" ]; then echo "Source files left in the package:"; echo "$LEFT"; exit 1; fi
+find "$STAGE" -name "__pycache__" -prune -exec rm -rf {} +
+VERSION=$(sed -n 's/^APP_VERSION = "\(.*\)"/\1/p' "$SRC/wtransfer/app.py")
+printf '\nSource code: the app code in this package is compiled. The complete source code of this version (%s) is\n%s\n' \
+	"$VERSION" "public at https://github.com/pocketkode/wifi-transfer/tree/v$VERSION" >>"$STAGE/NOTICE"
+
 echo "==> Packaging"
 rm -f "$DIST/$APP_NAME.muxapp"
 (cd "$DIST/stage" && zip -qr -X "$DIST/$APP_NAME.muxapp" "$APP_NAME")

@@ -35,6 +35,16 @@ def remove_old_files(app_dir):
                 pass
     for rel in OLD_DIRS:
         shutil.rmtree(os.path.join(app_dir, rel), ignore_errors=True)
+    # From 2.0.2 the package is compiled: installing it over a readable version leaves that version's .py files next
+    # to the new .so ones (Python loads the .so), so they go too
+    pkg = os.path.join(app_dir, "wtransfer")
+    for fn in os.listdir(pkg):
+        if fn.endswith(".py") and fn != "__init__.py" and os.path.isfile(os.path.join(pkg, fn[:-3] + ".so")):
+            try:
+                os.remove(os.path.join(pkg, fn))
+            except OSError:
+                pass
+    shutil.rmtree(os.path.join(pkg, "__pycache__"), ignore_errors=True)
 HEADER_H, FOOTER_H = 44, 34
 
 
