@@ -8,7 +8,7 @@
   "Version {bad} didn't start, so Wi-Fi Transfer went back to {v}.": "{bad} 版无法启动，因此 Wi-Fi Transfer 已恢复到 {v} 版。",
   "Starting…": "正在启动…",
   "Wi-Fi is off": "Wi-Fi 已关闭",
-  "Turn on Wi-Fi in muOS (Configuration → Network). Transfer starts automatically once connected.": "请在 muOS 中打开 Wi-Fi（Configuration → Network）。连接后会自动开始传输。",
+  "Turn on Wi-Fi in muOS (Configuration → Connectivity → Wi-Fi Network). Transfer starts automatically once connected.": "请在 muOS 中打开 Wi-Fi（Configuration → Connectivity → Wi-Fi Network）。连接后会自动开始传输。",
   "Transfer stopped": "传输已停止",
   "Couldn't start": "无法启动",
   "Connected · 1 device": "已连接 · 1 台设备",

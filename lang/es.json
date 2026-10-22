@@ -8,7 +8,7 @@
   "Version {bad} didn't start, so Wi-Fi Transfer went back to {v}.": "La versión {bad} no arrancó, así que Wi-Fi Transfer volvió a la {v}.",
   "Starting…": "Iniciando…",
   "Wi-Fi is off": "El Wi-Fi está apagado",
-  "Turn on Wi-Fi in muOS (Configuration → Network). Transfer starts automatically once connected.": "Activa el Wi-Fi en muOS (Configuration → Network). La transferencia empieza sola al conectarse.",
+  "Turn on Wi-Fi in muOS (Configuration → Connectivity → Wi-Fi Network). Transfer starts automatically once connected.": "Activa el Wi-Fi en muOS (Configuration → Connectivity → Wi-Fi Network). La transferencia empieza sola al conectarse.",
   "Transfer stopped": "Transferencia detenida",
   "Couldn't start": "No se pudo iniciar",
   "Connected · 1 device": "Conectado · 1 dispositivo",

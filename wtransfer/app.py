@@ -242,7 +242,7 @@ class App:
             return
         titles = {
             "starting": (_("Starting…"), ""),
-            "nowifi": (_("Wi-Fi is off"), _("Turn on Wi-Fi in muOS (Configuration → Network). "
+            "nowifi": (_("Wi-Fi is off"), _("Turn on Wi-Fi in muOS (Configuration → Connectivity → Wi-Fi Network). "
                                             "Transfer starts automatically once connected.")),
             "stopped": (_("Transfer stopped"), tr(self.message) or _("The transfer page is closed.")),
             "error": (_("Couldn't start"), tr(self.message)),

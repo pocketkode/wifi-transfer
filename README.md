@@ -52,7 +52,7 @@ Tested on the Anbernic RG40XXH with muOS 2601.0 Jacaranda. Other muOS devices wi
 
 ## Quick start
 
-1. Turn on Wi-Fi on the game console (**Configuration → Network**) and open **Applications → Wi-Fi Transfer**.
+1. Turn on Wi-Fi on the game console (**Configuration → Connectivity → Wi-Fi Network**) and open **Applications → Wi-Fi Transfer**.
 2. On your phone, **scan the QR code**, or type the address shown (e.g. `http://192.168.1.23:8080`) into a browser on a
    phone or PC on the **same Wi-Fi**.
 3. Enter the **PIN** shown on the game console.

@@ -8,7 +8,7 @@
   "Version {bad} didn't start, so Wi-Fi Transfer went back to {v}.": "バージョン {bad} が起動しなかったため、Wi-Fi Transfer は {v} に戻りました。",
   "Starting…": "起動しています…",
   "Wi-Fi is off": "Wi-Fi がオフです",
-  "Turn on Wi-Fi in muOS (Configuration → Network). Transfer starts automatically once connected.": "muOS で Wi-Fi をオンにしてください（Configuration → Network）。接続されると自動で転送が始まります。",
+  "Turn on Wi-Fi in muOS (Configuration → Connectivity → Wi-Fi Network). Transfer starts automatically once connected.": "muOS で Wi-Fi をオンにしてください（Configuration → Connectivity → Wi-Fi Network）。接続されると自動で転送が始まります。",
   "Transfer stopped": "転送を停止しました",
   "Couldn't start": "起動できませんでした",
   "Connected · 1 device": "接続中 · 1 台",

@@ -8,7 +8,7 @@
   "Version {bad} didn't start, so Wi-Fi Transfer went back to {v}.": "Versie {bad} startte niet, dus Wi-Fi Transfer is teruggegaan naar {v}.",
   "Starting…": "Starten…",
   "Wi-Fi is off": "Wifi staat uit",
-  "Turn on Wi-Fi in muOS (Configuration → Network). Transfer starts automatically once connected.": "Zet wifi aan in muOS (Configuration → Network). De overdracht start vanzelf zodra er verbinding is.",
+  "Turn on Wi-Fi in muOS (Configuration → Connectivity → Wi-Fi Network). Transfer starts automatically once connected.": "Zet wifi aan in muOS (Configuration → Connectivity → Wi-Fi Network). De overdracht start vanzelf zodra er verbinding is.",
   "Transfer stopped": "Overdracht gestopt",
   "Couldn't start": "Kon niet starten",
   "Connected · 1 device": "Verbonden · 1 apparaat",

@@ -8,7 +8,7 @@
   "Version {bad} didn't start, so Wi-Fi Transfer went back to {v}.": "Версия {bad} не запустилась, поэтому Wi-Fi Transfer вернулся к {v}.",
   "Starting…": "Запуск…",
   "Wi-Fi is off": "Wi-Fi выключен",
-  "Turn on Wi-Fi in muOS (Configuration → Network). Transfer starts automatically once connected.": "Включите Wi-Fi в muOS (Configuration → Network). Передача начнётся сама после подключения.",
+  "Turn on Wi-Fi in muOS (Configuration → Connectivity → Wi-Fi Network). Transfer starts automatically once connected.": "Включите Wi-Fi в muOS (Configuration → Connectivity → Wi-Fi Network). Передача начнётся сама после подключения.",
   "Transfer stopped": "Передача остановлена",
   "Couldn't start": "Не удалось запустить",
   "Connected · 1 device": "Подключено · 1 устройство",
